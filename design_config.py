@@ -1,0 +1,3 @@
+TITLE_TEXT = "CURRENCY CONVERTER"
+FONT_FOR_TITLE = ("Arial", 16, "bold")
+FONT_LABELS = ("Arial", 15)
