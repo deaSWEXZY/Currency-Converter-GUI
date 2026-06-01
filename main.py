@@ -46,7 +46,7 @@ class CurrencyConverterApp:
         amount_label = tk.Label(self.root, text="Amount:", font=cfg.FONT_LABEL, bg=cfg.BG_DARK, fg=TEXT_LIGHT)
         amount_label.grid(row=1, column=0, pady=5)
 
-        # ADDED SELF HERE so the math engine can read what the user types
+        # ADDED SELF HERE so the engine can read what the user types
         self.amount_entry = tk.Entry(self.root)
         self.amount_entry.grid(row=1, column=1, pady=5)
 
@@ -72,7 +72,7 @@ class CurrencyConverterApp:
         self.result_exchange_output = tk.Label(self.root, text="--", font=cfg.FONT_LABEL, bg=cfg.BG_DARK, fg=TEXT_LIGHT)
         self.result_exchange_output.grid(row=4, column=1)
 
-        # Button - Convert (Added command=self.convert_currency to link them!)
+        # Button - Convert 
         self.convert_button = ttk.Button(self.root, text="Convert", command=self.convert_currency)
         self.convert_button.grid(row=5, column=0, columnspan=2, pady=20)
 
